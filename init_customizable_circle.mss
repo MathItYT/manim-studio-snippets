@@ -15,16 +15,22 @@ def customizable_circ_updater(circ):
     real_radius = self.radius_times_1000.get_value() / 1000
     if real_fill_color != fill_color:
         circ.set_fill(real_fill_color)
+        fill_color = real_fill_color
     if real_fill_opacity != fill_opacity:
         circ.set_fill(opacity=real_fill_opacity)
+        fill_opacity = real_fill_opacity
     if real_stroke_color != stroke_color:
         circ.set_stroke(real_stroke_color)
+        stroke_color = real_stroke_color
     if real_stroke_opacity != stroke_opacity:
         circ.set_stroke(opacity=real_stroke_opacity)
+        stroke_opacity = real_stroke_opacity
     if real_stroke_width != stroke_width:
         circ.set_stroke(width=real_stroke_width)
+        stroke_width = real_stroke_width
     if real_radius != radius:
         circ.scale_to_fit_height(2 * real_radius)
+        radius = real_radius
 
 c.add_updater(customizable_circ_updater)
 self.add(c)
