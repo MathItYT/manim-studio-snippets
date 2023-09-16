@@ -1,2 +1,2 @@
-# manim-studio-snippets
-Built-in snippets for Manim Studio
+# Manim Studio Snippets
+Snippets for initializing mobjects in Manim Studio.
